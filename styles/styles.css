@@ -1,0 +1,703 @@
+header{
+    position:relative;
+    background-color: #E7F5FE;
+}
+
+.description-wrapper{
+    padding-top:2rem;
+
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    border-radius: 0 0 35px 35px;
+    object-fit: fill;
+    background: linear-gradient(90deg, rgba(214, 252, 254, 0.00) 0%, #D6E6FE 100%);
+    padding-bottom: 13.625rem;
+}
+
+.description-wrapper h1{
+    color:#253347;
+    margin-top:2rem;
+    text-align: center;
+    /* Text Preset 2 - Inter Semi Bold - 48px - 110% Line Height - -5% Line Spacing */
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 52.8px */
+    letter-spacing: -2.4px;
+}
+
+.description-wrapper p{
+    color:#5E6E85;
+    margin-top:1.5rem;
+    text-align: center;
+    /* Text Preset 6 (Regular) - Inter Regular - 16px - 150% Line Height - 0% Line Spacing */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+
+
+.description-wrapper img{
+    margin:0 auto 0 auto;
+}
+.input-data {
+    margin-top: 2rem;
+}
+.input-wrapper input[type="number"]::-webkit-outer-spin-button,
+.input-wrapper input[type="number"]::-webkit-inner-spin-button,
+.imperial-field input[type="number"]::-webkit-outer-spin-button,
+.imperial-field input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-wrapper input[type="number"],
+.imperial-field input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.metric-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.imperial-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.imperial-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #5E6E85;
+}
+
+.imperial-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.imperial-field {
+    position: relative;
+}
+
+.imperial-field input {
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #5E6E85;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: -1.2px;
+    color: #253347;
+}
+
+.imperial-field .metric {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #345FF6;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: -1.2px;
+}
+
+form{
+    border-radius: 1rem;
+    background-color: #FFF;
+    margin-top:2rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+
+fieldset{
+
+    display:block;
+    border:none;
+    margin:1.5rem;
+    padding:0;
+    flex-shrink: 0;
+}
+
+.bmi-calculator{
+    position:absolute;
+    top:65%;
+    box-shadow: 16px 32px 56px 0 rgba(143, 174, 207, 0.25);
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+    border-radius: 1rem;
+}
+
+
+legend{
+    margin:0 auto;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px; /* 120.833% */
+    letter-spacing: -1.2px;
+    color:#253347;
+}
+
+.radio-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:1.5rem;
+}
+
+.radio-button-wrapper{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+.radio-button-wrapper label{
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color:#253347;
+
+}
+
+
+input[type="radio"]{
+    display:none;
+}
+
+.radio-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.radio-option input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.custom-radio {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #6b7280;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* checked состояние */
+.radio-option input:checked + .custom-radio {
+    background: rgba(52, 95, 246, 0.15);
+    border-color: transparent;
+}
+
+.radio-option input:checked + .custom-radio::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #345ff6;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #253347;
+}
+
+.input-data{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+}
+
+
+.input-wrapper{
+    position:relative;
+}
+
+.input-wrapper label{
+    display:block;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color:#5E6E85;
+
+}
+
+.input-wrapper input{
+    margin-top:0.5rem;
+    display:block;
+    width:100%;
+    padding:1.5rem;
+    border-radius: 12px;
+    border:1px solid #5E6E85;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px; /* 120.833% */
+    letter-spacing: -1.2px;
+    color:#253347;
+}
+
+.metric{
+    position:absolute;
+    right:10%;
+    top:60%;
+
+    transform: translateY(-60%);
+    color:#345FF6;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px; /* 120.833% */
+    letter-spacing: -1.2px;
+}
+
+.input-wrapper input::-webkit-outer-spin-button,
+.input-wrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-wrapper input {
+    -moz-appearance: textfield;
+}
+
+
+
+
+.bmi-calculation{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #345FF6;
+    margin:1.5rem 2.9rem 0 2.9rem;
+}
+
+.bmi-calculation h2{
+    color:#FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+
+.calculated-bmi{
+    color:#FFF;
+    margin-top:0.5rem;
+
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 52.8px */
+    letter-spacing: -2.4px;
+}
+
+.bmi-description{
+
+    margin-top:1.5rem;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color:#FFF
+}
+
+.bmi-description span{
+    color:#FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+main{
+    margin-top:52px;
+}
+
+
+.meaning{
+    padding:3rem 1.5rem 0 1.5rem;
+}
+
+.meaning h2{
+
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 35.2px */
+    letter-spacing: -1.6px;
+    color:#253347;
+    text-align: center;
+}
+
+.meaning-text{
+    margin-top:2rem;
+    color:#5E6E85;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+.advising{
+    padding:3.5rem 1.5rem 3.5rem 1.5rem;
+
+    background: linear-gradient(
+            90deg,
+            rgba(214, 252, 254, 0) 0%,
+            rgba(214, 230, 254, 0.25) 100%
+    );
+}
+
+.advice-item h3{
+    margin-top:2rem;
+    color:#253347;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px; /* 120.833% */
+    letter-spacing: -1.2px;
+}
+
+.advice-item-description{
+
+    margin-top:1.5rem;
+    color:#5E6E85;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.advice-item + .advice-item{
+    margin-top:2.5rem;
+}
+
+.limitation-item{
+    border-radius: 1rem;
+    padding:1.5rem;
+    box-shadow: 16px 32px 56px 0 rgba(143, 174, 207, 0.25);
+}
+
+.limitation-header{
+    display:flex;
+    flex-direction: row;
+    justify-items: left;
+    gap:1rem;
+    align-items: center;
+}
+
+.limitation-description{
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color:#5E6E85;
+}
+
+.limitations-wrapper{
+    margin-top:3.5rem;
+    padding:0 1.81rem 0 1.19rem;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1rem;
+
+}
+
+.limitation-text{
+    color:#5E6E85;
+    text-align: center;
+    /* Text Preset 6 (Regular) - Inter Regular - 16px - 150% Line Height - 0% Line Spacing */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top:2rem;
+}
+
+
+@media (min-width: 768px){
+    .limitations-wrapper{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap:1.5rem;
+        margin-top:3.5rem;
+    }
+
+
+    .limitation-item{
+        min-height: 16rem;
+    }
+
+    .limitation-item:last-of-type{
+        grid-column: 1/-1;
+        max-width:calc(50% - 12px);
+        justify-self: center;
+    }
+
+    .advice-item{
+        gap:2.5rem;
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+
+    main{
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .bmi-calculation{
+        display:flex;
+        flex-direction: row;
+        width:88%;
+        border-radius: 16px 999px 999px 16px;
+        justify-content: space-between;
+        align-items: center;
+        gap:11rem;
+
+
+    }
+
+    .bmi-description{
+        width:16.7rem;
+    }
+
+    .bmi-calculator{
+        position:absolute;
+        top:65%;
+        box-shadow: 16px 32px 56px 0 rgba(143, 174, 207, 0.25);
+        left:50%;
+        transform: translateX(-50%);
+        border-radius: 1rem;
+    }
+
+    .input-data{
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        gap:1.5rem;
+        align-items: center;
+    }
+
+    legend{
+        margin:unset;
+    }
+
+    .radio-wrapper{
+        justify-content: left;
+        gap:16.8rem;
+    }
+
+    .description-wrapper h1{
+        margin-left:auto;
+        margin-right:auto;
+        width:19.5rem;
+    }
+
+    .description-wrapper p{
+        width:100%;
+    }
+}
+
+@media(min-width: 1100px){
+    .description-wrapper{
+        width:70%;
+        padding:5.5rem 18.5rem 13.9rem 8.75rem;
+    }
+    .description-wrapper h1{
+        text-align: left;
+        margin:6rem 0 0 0;
+        font-size: 64px;
+
+    }
+
+    .description-wrapper img{
+        margin:0 0 0 0;
+    }
+
+    .description-wrapper p{
+        font-size: 16px;
+        width:465px;
+        margin:2rem 0 0 0;
+        text-align: left;
+    }
+    header{
+        background-color: #FFF;
+    }
+
+    .bmi-calculator{
+        background-color: #FFF;
+        padding:2rem;
+        max-width: 564px;
+
+    }
+    .bmi-calculator form{
+
+        z-index: 2;
+
+    }
+
+    .radio-wrapper{
+        gap:7.5rem;
+    }
+
+    .bmi-description{
+        width:30rem;
+        margin-top:0;
+    }
+    .your-ibm-wrapper h2{
+        width:100%;
+    }
+
+    .bmi-calculator{
+        top:30%;
+        transform: translateY(-30%);
+        left:55%;
+    }
+    .bmi-calculation{
+
+        justify-content: left;
+        gap:10rem;
+    }
+
+    .advising{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .advice-item{
+        display:block;
+        text-align: center;
+    }
+
+    .advice-item h3{
+        text-align: left;
+    }
+
+    .advice-item{
+        margin-top:0;
+    }
+    .advice-item p{
+        text-align: left;
+
+        width:300px;
+    }
+
+    .limitation {
+        padding: 125px 140px 115px 140px;
+        display: grid;
+        grid-template-columns: 34rem 1fr;
+        column-gap: 2rem;
+        align-items: start;
+    }
+
+    .meaning {
+        padding: 0;
+    }
+
+    .meaning h2,
+    .meaning p {
+        text-align: left;
+    }
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 131px;
+    }
+    .limitations-wrapper {
+        margin-top: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 17.8125rem); /* 285px */
+        grid-template-areas:
+      ". gender"
+      "age muscle"
+      "pregnancy race";
+        column-gap: 2rem; /* 32px */
+        row-gap: 1.5rem;  /* 24px */
+        justify-content: end;
+        align-items: start;
+    }
+
+    .limitation-item {
+        background: #fff;
+        min-height: auto;
+        padding:2rem;
+    }
+
+    .item-gender { grid-area: gender; transform: translateX(-40%)}
+    .item-age { grid-area: age; height:184px;}
+    .item-muscle { grid-area: muscle; }
+    .item-pregnancy { grid-area: pregnancy;  transform:translateX(-35%) }
+    .item-race { grid-area: race;  transform:translateX(-35%) }
+
+    /* отменяем tablet-центрирование */
+    .limitation-item:last-of-type {
+        grid-column: auto;
+        max-width: none;
+        justify-self: stretch;
+    }
+}
+
+
